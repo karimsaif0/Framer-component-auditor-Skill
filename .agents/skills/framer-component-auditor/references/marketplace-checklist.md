@@ -39,3 +39,10 @@ Evaluate each item as PASS, FAIL, REVIEW, or NOT APPLICABLE.
 - [ ] License and attribution obligations are respected.
 
 A checked checklist is not a guarantee of Marketplace acceptance. Record the tested Framer environment and the limits of the audit.
+
+
+## Review reporting safeguards
+
+- Report the code-review findings separately from dashboard, listing, preview-page, originality, and submission checks.
+- Mark external/dashboard-only requirements as **Not tested** unless the relevant Framer project or Creator Dashboard was actually inspected.
+- Do not invent requirements when official page content is unavailable. State the retrieval limitation and link the official page for manual verification.
