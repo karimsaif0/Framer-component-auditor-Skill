@@ -14,3 +14,11 @@ For each item, report evidence and severity.
 - Media: streams and audio contexts are stopped/closed when no longer needed.
 - Reduced motion: animation can be reduced or disabled where appropriate.
 - Fallbacks: unsupported APIs and context failures degrade gracefully.
+
+
+## Additional checks
+
+- Confirm animation and browser work is gated with `useIsStaticRenderer()` when static/export rendering requires it; `typeof window` alone is insufficient.
+- Check that recurring work pauses when the component is off-screen and resumes only when needed.
+- For WebGL/canvas, inspect capped device pixel ratio, bounded particle/data counts, per-frame allocations, context-loss handling, and a useful fallback.
+- Treat static-analysis script findings as leads; manually confirm every reported issue and inspect for issues the script cannot detect.
